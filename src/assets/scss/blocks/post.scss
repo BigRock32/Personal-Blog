@@ -1,0 +1,176 @@
+.post {
+  margin-bottom: 3rem;
+  padding: 2.5rem;
+  background-color: $primary;
+  box-shadow: 0 15px 25px rgba($black, 0.35);
+  overflow: hidden;
+
+  border-radius: 5px;
+  @include breakpoint($mobile-bp) {
+    padding: 1.5rem;
+  }
+
+  &__header {
+    margin: 0 0 2.5rem;
+    &--preview {
+      margin: -2.5rem -2.5rem 2.5rem;
+    }
+  }
+
+  &__preview {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__content {
+    margin-bottom: 2rem;
+  }
+  &__title {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-size: 1.4;
+    color: $white;
+    font-weight: 500;
+    a {
+      color: inherit;
+    }
+    &--open {
+      margin-bottom: 0.75rem;
+    }
+  }
+
+  // .post__text
+
+  &__description {
+    font-size: 1.4rem;
+    color: #d2d2d2;
+  }
+
+  &__text {
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+    color: $white;
+    line-height: 1.6;
+    border-bottom: 1px solid #1c1c1c;
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.5em;
+    }
+    h3 {
+      font-size: 1.25em;
+    }
+    h3 {
+      font-size: 1.15em;
+    }
+    h5,
+    h6 {
+      font-size: 1em;
+    }
+    ul,
+    ol {
+      margin-bottom: 2rem;
+    }
+    ol {
+      list-style: decimal;
+      list-style-position: inside;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+    a {
+      color: $blue;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    table {
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  // .post__footer
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include breakpoint($mobile-bp) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  // .post__date
+
+  &__data {
+    display: flex;
+
+    color: #828282;
+    font-size: 1.2rem;
+    @include breakpoint($mobile-bp) {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+    a {
+      color: inherit;
+    }
+  }
+
+  &__data-item {
+    &:not(:last-child):after {
+      content: '';
+      display: inline-block;
+      position: relative;
+      top: -1px;
+      margin: 0 1.5rem;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #c4c4c4;
+    }
+  }
+  &__read {
+    font-size: 1.4rem;
+    color: #107eff;
+  }
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: $white;
+    a {
+      transition: opacity 0.2s linear;
+      color: inherit;
+      opacity: 0.6;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  &__actions-icon {
+    margin-left: 0.5rem;
+  }
+
+  &__subtitle {
+    font-size: 1.6rem;
+    color: $white;
+    font-weight: 500;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+}

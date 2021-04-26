@@ -1,0 +1,80 @@
+.add-post {
+  padding: 1.5rem 2rem;
+  margin-bottom: 3rem;
+  background-color: $secondary;
+  box-shadow: 0 15px 25px rgba($black, 0.45);
+  border-radius: 5px;
+  @include breakpoint($mobile-bp) {
+    padding: 1.5rem;
+  }
+  // .add-post__form
+
+  &__form {
+    display: flex;
+    align-items: flex-end;
+  }
+  &__form-actions {
+    width: 12rem;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+    @include breakpoint($mobile-bp) {
+      width: 9rem;
+    }
+  }
+  &__textarea {
+    display: block;
+    flex-grow: 1;
+    overflow: hidden;
+    height: 34px;
+    border: none;
+    background: transparent;
+    resize: none;
+    font-size: 1.5rem;
+    color: $white;
+    font-family: inherit;
+    &::placeholder {
+      color: #d2d2d2;
+    }
+  }
+  &__file,
+  &__send {
+    display: block;
+    cursor: pointer;
+    width: 4.4rem;
+    height: 4.4rem;
+    border-radius: 50%;
+    border: none;
+    transition: background-color 0.2s linear;
+    @include breakpoint($mobile-bp) {
+      width: 3.4rem;
+      height: 3.4rem;
+    }
+  }
+  &__file {
+    background: #ebebeb url('../images/icons/add-photo.svg') center no-repeat;
+    input {
+      display: none;
+    }
+    &:hover {
+      background-color: darken(#ebebeb, 10%);
+    }
+    @include breakpoint($mobile-bp) {
+      background-size: 18px;
+    }
+  }
+
+  &__send {
+    font-size: 0;
+    color: transparent;
+    background: $blue url('../images/icons/send-arrow.svg') center no-repeat;
+    background-color: $blue;
+    margin-left: 1.5rem;
+    &:hover {
+      background-color: darken($blue, 10%);
+    }
+    @include breakpoint($mobile-bp) {
+      background-size: 15px;
+    }
+  }
+}
