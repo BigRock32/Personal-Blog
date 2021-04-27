@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/style.min.css">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
     
     <!-- Useful meta tags -->
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="robots" content="index, follow">
-    <meta name="google" content="notranslate">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="google" content="notranslate" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="" />
     
-    <title>Profile</title>
+    <title>Text Page</title>
   </head>
   <body>
     <div class="page" id="page">
@@ -69,7 +72,7 @@
       <!-- SIDEBAR -->
       <aside class="sidebar" id="sidebar">
         <div class="sidebar__header">
-          <img src="/assets/images/side_header/Rectangle 1.jpg" alt="" />
+          <img src="../dist/assets/images/side_header/Rectangle 1.jpg" alt="" />
         </div>
         <div class="sidebar__content">
           <div class="profile">
@@ -84,7 +87,7 @@
               <li class="social__item">
                 <a href="" class="social__link" target="_blank">
                   <img
-                    src="/assets/images/side_icons/instagram.svg"
+                    src="../dist/images/side_icons/instagram.svg"
                     alt="Самарин Василий Instagram"
                   />
                 </a>
@@ -92,7 +95,7 @@
               <li class="social__item">
                 <a href="" class="social__link" target="_blank">
                   <img
-                    src="/assets/images/side_icons/vk.svg"
+                    src="../dist/images/side_icons/vk.svg"
                     alt="Самарин Василий VK"
                   />
                 </a>
@@ -100,7 +103,7 @@
               <li class="social__item">
                 <a href="" class="social__link" target="_blank">
                   <img
-                    src="/assets/images/side_icons/pinterest.svg"
+                    src="../dist/images/side_icons/pinterest.svg"
                     alt="Самарин Василий Pinterest"
                   />
                 </a>
@@ -158,61 +161,91 @@
       <!-- MAIN  -->
       <main class="main">
         <div class="container">
-<h1 class="page__title">Профиль</h1>
-
-<form action="/" method="post" class="form">
-  <div class="cabinet">
-    <div class="cabinet__form">
-      <div class="form__group form__group--md">
-        <input
-          type="text"
-          class="form__control"
-          placeholder="Ваше имя"
-          value="Самарин Василий"
-        />
-        <span class="form__line"></span>
-      </div>
-
-      <div class="form__group form__group--md">
-        <input
-          type="email"
-          class="form__control"
-          placeholder="Ваш e-mail"
-          value="samarin.vasya.00@mail.ru"
-        />
-        <span class="form__line"></span>
-      </div>
-
-      <div class="form__group form__group--md">
-        <input
-          type="password"
-          class="form__control"
-          placeholder="Новый пароль"
-        />
-        <span class="form__line"></span>
-      </div>
-
-      <div class="form__group form__group--md">
-        <input
-          type="password"
-          class="form__control"
-          placeholder="Подтвердите пароль"
-        />
-        <span class="form__line"></span>
-      </div>
-    </div>
-    <div class="cabinet__avatar">
-      <img src="http://placehold.it/150" alt="" />
-      <label class="cabinet__file"><input type="file" / > выбрать аватар</label>
-    </div>
+<article class="post">
+  <div class="post__actions">
+    <a href="index.html">вернуться назад</a>
+    <a href="#">
+      поделиться
+      <img
+        src="../dist/assets/images/posts/share.svg"
+        alt=""
+        class="post__actions-icon"
+      />
+    </a>
   </div>
-
-  <div class="form__footer">
-    <button type="submit" class="btn btn--blue btn--rounded btn--sm">
-      Сохранить
-    </button>
+  <div class="post__header post__header--open">
+    <h1 class="post__title post__title--mb0">Как создавать сайты легко</h1>
   </div>
-</form>
+  <div class="post__content">
+    <div class="post__text">
+      <h2>Title h2</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+        volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit.
+        Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu
+        sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa.
+        Egestas ornare vel volutpat. Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum,
+        posuere tortor lacinia sit. Sagittis porttitor orci auctor in at
+        tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam
+        id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+      </p>
+      <h3>Title h3</h3>
+      <p>
+        Lorem
+        <a href="#">ipsum dolor sit amet, consectetur</a>
+        adipiscing elit. Elementum volutpat orci turpis urna. Et vestibulum,
+        posuere tortor lacinia sit. Sagittis porttitor orci auctor in at
+        tincidunt arcu egestas. Fusce arcu sodales lacinia eu auctor nunc nam
+        id. Diam sit sed volutpat massa. Egestas ornare vel volutpat.
+      </p>
+      <h4>Title h4</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+        volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit.
+        Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu
+        sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa.
+        Egestas ornare vel volutpat.
+      </p>
+      <p>
+        <img src="/assets/images/posts/4.jpg" alt="" />
+      </p>
+      <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+      </ul>
+      <ol>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+      </ol>
+      <table>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </table>
+      <p>
+        <span class="fr-video">
+          <iframe
+            width="1536"
+            height="864"
+            src="https://www.youtube.com/embed/p4zbV1MBJNs?list=PLoq3Accf02PWYMRAU8RDRjSfJK52vUTo2"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </span>
+      </p>
+    </div>
+    <!-- /.Post__text -->
+
+    <!-- /.Related -->
+  </div>
+</article>
 
 </div>
       </main>
@@ -230,7 +263,7 @@
  <div class="modal" id="contact-modal">
   <div class="modal__content modal__content--contact">
     <button type="button" class="modal__close">
-      <img src="/assets/images/modals/close.svg" alt="Закрыть" />
+      <img src="../dist/assets/images/modals/close.svg" alt="Закрыть" />
     </button>
     <form action="/" method="post" class="form">
       <div class="form__group form__group--md">
@@ -275,28 +308,28 @@
  <div class="modal">
   <div class="modal__content">
     <button type="button" class="modal__close">
-      <img src="/assets/images/modals/close.svg" alt="Закрыть" />
+      <img src="../dist/assets/images/modals/close.svg" alt="Закрыть" />
     </button>
 
     <ul class="social">
       <li class="social__item">
         <a href="" class="social__link">
-          <img src="/assets/images/modals/facebook.svg" alt="" />
+          <img src="../dist/images/modals/facebook.svg" alt="" />
         </a>
       </li>
       <li class="social__item">
         <a href="" class="social__link">
-          <img src="/assets/images/modals/twitter.svg" alt="" />
+          <img src="../dist/images/modals/twitter.svg" alt="" />
         </a>
       </li>
       <li class="social__item">
         <a href="" class="social__link">
-          <img src="/assets/images/modals/vk.svg" alt="" />
+          <img src="../dist/images/modals/vk.svg" alt="" />
         </a>
       </li>
       <li class="social__item">
         <a href="" class="social__link">
-          <img src="/assets/images/modals/copy.svg" alt="" />
+          <img src="../dist/images/modals/copy.svg" alt="" />
         </a>
       </li>
     </ul>
