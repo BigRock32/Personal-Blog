@@ -24,7 +24,7 @@ const distPath = 'dist/'
 
 const path = {
   build: {
-    html: distPath + 'partials',
+    html: distPath,
     js: distPath + 'assets/js/',
     css: distPath + 'assets/css/',
     images: distPath + 'assets/images/',
@@ -76,8 +76,6 @@ function html(cb) {
     )
     .pipe(dest(path.build.html))
     .pipe(browserSync.reload({ stream: true }))
-
-  cb()
 }
 
 function css(cb) {
